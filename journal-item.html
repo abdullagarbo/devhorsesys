@@ -138,18 +138,82 @@
       <div class="contact-sidebar-header">
         <i data-feather="search"></i>
         <div class="search-form">
-          <input type="search" class="form-control" placeholder="Search journals">
+          <input type="search" class="form-control" placeholder="Search journal posts">
         </div>
         <a href="#modalNewPost" class="btn btn-xs btn-icon btn-primary" data-toggle="modal">
           <span data-toggle="tooltip" title="Add new journal post" data-original-title="Add new journal post"><i
               data-feather="plus"></i></span>
         </a>
       </div><!-- contact-sidebar-header -->
+      <div class="contact-sidebar-body">
+        <div class="pd-y-20 pd-x-10 contact-list">
+          <div class="media">
+            <div class="avatar avatar-sm">
+              <img src="assets/img/img2.jpg" class="rounded-circle" alt="">
+            </div>
+            <div class="media-body mg-l-10">
+              <a href="#">
+                <h6 class="tx-13 mg-b-3">Sundsvall ridklubb</h6>
+              </a>
+              <span class="tx-12">JAN 1, 2019</span>
+            </div><!-- media-body -->
+            <nav>
+              <a href="#modalDeletePost" data-toggle="modal"><i data-feather="x-circle"></i></a>
+              <a href="#modalEditPost" data-toggle="modal"><i data-feather="edit-2"></i></a>
+            </nav>
+          </div><!-- media -->
+          <div class="media">
+            <div class="avatar avatar-sm">
+              <img src="assets/img/img2.jpg" class="rounded-circle" alt="">
+            </div>
+            <div class="media-body mg-l-10">
+              <a href="#">
+                <h6 class="tx-13 mg-b-3">Timrå ridklubb</h6>
+              </a>
+              <span class="tx-12">JUNE 19, 2019</span>
+            </div><!-- media-body -->
+            <nav>
+              <a href="#modalDeletePost" data-toggle="modal"><i data-feather="x-circle"></i></a>
+              <a href="#modalEditPost" data-toggle="modal"><i data-feather="edit-2"></i></a>
+            </nav>
+          </div><!-- media -->
+          <div class="media">
+            <div class="avatar avatar-sm">
+              <img src="assets/img/img2.jpg" class="rounded-circle" alt="">
+            </div>
+            <div class="media-body mg-l-10">
+              <a href="#">
+                <h6 class="tx-13 mg-b-3">Umeå ridklubb</h6>
+              </a>
+              <span class="tx-12">MARS 22, 2019 11.15 am</span>
+            </div><!-- media-body -->
+            <nav>
+              <a href="#modalDeletePost" data-toggle="modal"><i data-feather="x-circle"></i></a>
+              <a href="#modalEditPost" data-toggle="modal"><i data-feather="edit-2"></i></a>
+            </nav>
+          </div><!-- media -->
+          <div class="media">
+            <div class="avatar avatar-sm">
+              <img src="assets/img/img2.jpg" class="rounded-circle" alt="">
+            </div>
+            <div class="media-body mg-l-10">
+              <a href="#">
+                <h6 class="tx-13 mg-b-3">Sundsvall ridklubb</h6>
+              </a>
+              <span class="tx-12">JULY 15, 2019 10.30 am</span>
+            </div><!-- media-body -->
+            <nav>
+              <a href="#modalDeletePost" data-toggle="modal"><i data-feather="x-circle"></i></a>
+              <a href="#modalEditPost" data-toggle="modal"><i data-feather="edit-2"></i></a>
+            </nav>
+          </div><!-- media -->
+        </div>
+      </div>
     </div><!-- contact-sidebar -->
     <div class="contact-content">
       <div class="contact-content-header">
         <nav class="nav">
-          <a href="#contactInformation" class="nav-link active" data-toggle="tab">Journal details</span></a>
+          <a href="#contactInformation" class="nav-link active" data-toggle="tab">Journal post details</span></a>
         </nav>
         <a href="#" id="contactOptions" class="text-secondary mg-l-auto d-xl-none"><i
             data-feather="more-horizontal"></i></a>
@@ -159,18 +223,6 @@
         <div class="tab-content">
 
           <div id="contactInformation" class="tab-pane show active pd-20 pd-xl-25">
-            <div class="d-flex align-items-center justify-content-between mg-b-25">
-              <h6 class="mg-b-0"></h6>
-              <div class="d-flex">
-                <a href="#modalEditContact" data-toggle="modal"
-                  class="btn btn-sm btn-white d-flex align-items-center mg-r-5"><i data-feather="edit-2"></i><span
-                    class="d-none d-sm-inline mg-l-5"> Edit</span></a>
-                <a href="#modalDeleteContact" data-toggle="modal"
-                  class="btn btn-sm btn-white d-flex align-items-center"><i data-feather="trash"></i><span
-                    class="d-none d-sm-inline mg-l-5"> Delete</span></a>
-              </div>
-            </div>
-
             <div class="row row-sm">
               <div class="col-6 col-sm-4">
                 <label class="tx-10 tx-medium tx-spacing-1 tx-color-03 tx-uppercase tx-sans mg-b-10">Rider</label>
@@ -251,6 +303,12 @@
                 </div><!-- media -->
               </div>
             </div><!-- row -->
+            <div class="col-sm-6 mg-t-20 mg-sm-t-30">
+              <div data-label="Preview" class="df-example">
+                <img src="assets/img/img7.jpg" class="img-thumbnail wd-100p wd-sm-200" alt="Responsive image">
+                <img src="assets/img/img8.jpg" class="img-thumbnail wd-100p wd-sm-200" alt="Responsive image">
+              </div>
+            </div>
           </div>
         </div><!-- tab-content -->
       </div><!-- contact-content-body -->
@@ -302,7 +360,7 @@
                   <div class="avatar avatar-xxl"><img src="assets/img/img2.jpg" class="rounded-circle" alt="">
                   </div>
                 </div><!-- col -->
-              </div>
+              </div><br>
             </div><!-- col -->
             <div class="flex-fill">
               <h6 class="mg-b-10">Journal post Information</h6>
@@ -340,7 +398,16 @@
         </div>
         <div class="modal-footer">
           <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
-            <button type="button" class="btn btn-primary mg-b-5 mg-sm-b-0">Save Post</button>
+            <div class="dropup mg-b-15 mg-sm-b-0 mg-sm-r-auto">
+              <button type="button" class="btn btn-block bd bd-gray-300" data-toggle="dropdown" aria-expanded="true">Add
+                ToDo <i class="icon ion-ios-arrow-up mg-l-5"></i></button>
+              <div class="dropdown-menu tx-13" x-placement="top-start"
+                style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -138px, 0px);">
+                <a href="#" class="dropdown-item">New ToDo item</a>
+              </div><!-- dropdown-menu -->
+            </div>
+            <button type="button" class="btn btn-primary mg-sm-l-5"><i data-feather="upload"></i> Upload photo</button>
+            <button type="button" class="btn btn-primary mg-sm-l-5">Save Post</button>
             <button type="button" class="btn btn-secondary mg-sm-l-5" data-dismiss="modal">Discard</button>
           </div>
         </div><!-- modal-footer -->
@@ -348,7 +415,7 @@
     </div><!-- modal-dialog -->
   </div><!-- modal -->
 
-  <div class="modal fade effect-scale" id="modalEditContact" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal fade effect-scale" id="modalEditPost" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-body pd-20 pd-sm-30">
@@ -403,6 +470,14 @@
         </div>
         <div class="modal-footer">
           <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
+            <div class="dropup mg-b-15 mg-sm-b-0 mg-sm-r-auto">
+              <button type="button" class="btn btn-block bd bd-gray-300" data-toggle="dropdown" aria-expanded="true">Add
+                ToDo <i class="icon ion-ios-arrow-up mg-l-5"></i></button>
+              <div class="dropdown-menu tx-13" x-placement="top-start"
+                style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -138px, 0px);">
+                <a href="#" class="dropdown-item">New ToDo item</a>
+              </div><!-- dropdown-menu -->
+            </div>
             <button type="button" class="btn btn-primary mg-b-5 mg-sm-b-0">Save Changes</button>
             <button type="button" class="btn btn-secondary mg-sm-l-5" data-dismiss="modal">Cancel</button>
           </div>
@@ -411,7 +486,7 @@
     </div><!-- modal-dialog -->
   </div><!-- modal -->
 
-  <div class="modal fade effect-scale" id="modalDeleteContact" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal fade effect-scale" id="modalDeletePost" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
       <div class="modal-content">
         <div class="modal-header">
