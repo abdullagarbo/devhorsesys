@@ -294,7 +294,7 @@
         <!-- start horseProfile right sidebar -->
         <div class="profile-sidebar mg-t-40 mg-lg-t-0 pd-lg-l-25">
           <div class="row">
-            <div class="col-sm-6 col-md-5 col-lg mg-t-40 mg-sm-t-0 mg-lg-t-40">
+            <div class="col-sm-5 col-md-5 col-lg mg-t-40 mg-sm-t-0 mg-lg-t-40">
               <div class="d-flex align-items-center justify-content-between mg-b-20">
                 <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Training Journals</h6>
               </div>
@@ -312,7 +312,7 @@
               </ul>
             </div><!-- col -->
 
-            <div class="col-sm-6 col-md-5 col-lg mg-t-40 mg-sm-t- mg-lg-t-40">
+            <div class="col-sm-5 col-md-5 col-lg mg-t-40 mg-sm-t- mg-lg-t-40">
               <div class="calendar-wrapper">
                 <div class="calendar-sidebar">
                   <div class="calendar-sidebar-header">
@@ -321,26 +321,29 @@
                       <input type="search" class="form-control" placeholder="Search calendar">
                     </div>
                     <a href="#" class="btn btn-sm btn-primary btn-icon calendar-add">
-                      <div data-toggle="tooltip" title="Create New Event"><i data-feather="plus"></i></div>
+                      <div data-toggle="tooltip"><i data-feather="plus"></i></div>
                     </a><!-- calendar-add -->
+                    <div class="dropdown">
+                      <button style="margin-left: 1px;" class="btn btn-sm btn-primary btn-icon dropdown-toggle"
+                        type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <nav class="calendar-nav">
+                          <a href="#" class="calendar show"><span></span> Training Events</a>
+                          <a href="#" class="birthday show"><span></span> Health Events</a>
+                          <a href="#" class="holiday show"><span></span> Competition Events</a>
+                          <a href="#" class="discover show"><span></span> Weekly Events</a>
+                          <a href="#" class="meetup show"><span></span> Meetup Events</a>
+                          <a href="#" class="other show"><span></span> Other Events</a>
+                        </nav>
+                      </div>
+                    </div>
                   </div><!-- calendar-sidebar-header -->
                   <div id="calendarSidebarBody" class="calendar-sidebar-body">
                     <div class="calendar-inline">
                       <div id="calendarInline"></div>
                     </div><!-- calendar-inline -->
-
-                    <div class="pd-y-20 pd-x-15">
-                      <label class="tx-uppercase tx-sans tx-10 tx-medium tx-spacing-1 tx-color-03 pd-l-10 mg-b-10">My
-                        Calendar</label>
-                      <nav class="calendar-nav">
-                        <a href="#" class="calendar show"><span></span> Training Events</a>
-                        <a href="#" class="birthday show"><span></span> Health Events</a>
-                        <a href="#" class="holiday show"><span></span> Competition Events</a>
-                        <a href="#" class="discover show"><span></span> Weekly Events</a>
-                        <a href="#" class="meetup show"><span></span> Meetup Events</a>
-                        <a href="#" class="other show"><span></span> Other Events</a>
-                      </nav>
-                    </div>
 
                     <div class="pd-20 mg-b-20">
                       <label class="tx-uppercase tx-sans tx-10 tx-medium tx-spacing-1 tx-color-03 mg-b-15">Upcoming
@@ -362,10 +365,6 @@
                     </div>
                   </div><!-- calendar-sidebar-body -->
                 </div><!-- calendar-sidebar -->
-
-                <div class="calendar-content">
-                  <div id="calendar" class="calendar-content-body"></div>
-                </div><!-- calendar-content -->
               </div><!-- calendar-wrapper -->
             </div><!-- col -->
 

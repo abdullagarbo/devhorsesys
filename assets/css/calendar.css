@@ -1,12 +1,11 @@
 /*
- * Dashforge Calendar Page
  *
  * This style is use for calendar page.
  *
  */
 @media (max-width: 374px) {
   .app-calendar.calendar-sidebar-show .calendar-content {
-    display: none; } }
+    visibility: visible; } }
 
 @media (max-width: 991.98px) {
   .app-calendar.calendar-sidebar-show .calendar-sidebar {
@@ -31,7 +30,7 @@
   left: -100%;
   width: 100%;
   border-right: 1px solid rgba(72, 94, 144, 0.16);
-  visibility: hidden;
+  visibility: visible;
   transition: all 0.3s; }
   @media (prefers-reduced-motion: reduce) {
     .calendar-sidebar {
