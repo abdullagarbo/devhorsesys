@@ -18,6 +18,8 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="stylesheet" href="assets/css/profile.css">
+  <link rel="stylesheet" href="assets/css/calendar.css">
+  <link rel="stylesheet" href="assets/css/ionicons/ionicons.min.css">
 
 </head>
 
@@ -45,10 +47,7 @@
               <a href="index.html" class="nav-sub-link"><i data-feather="grid"></i>My horses</a>
             </li>
             <li class="nav-sub-item">
-              <a href="trjournal.html" class="nav-sub-link"><i data-feather="book-open"></i>Trainings Journal</a>
-            </li>
-            <li class="nav-sub-item">
-              <a href="#" class="nav-sub-link"><i data-feather="calendar"></i>Calendar</a>
+              <a href="calendar.html" class="nav-sub-link"><i data-feather="calendar"></i>Calendar</a>
             </li>
             <li class="nav-sub-item">
               <a href="#" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Statistics</a>
@@ -518,6 +517,67 @@
               <h6>You have 18 mutual connection</h6>
               <p class="tx-color-03 mg-b-0">You and Fen both know Archie Cantones, Socrates Itumay, and 17 others</p>
             </div><!-- col -->
+
+            <div class="col-sm-5 col-md-5 col-lg mg-t-40 mg-sm-t- mg-lg-t-40">
+              <div class="calendar-wrapper">
+                <div class="calendar-sidebar">
+                  <div class="d-flex align-items-center justify-content-between mg-b-20">
+                    <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Horse Calendar</h6>
+                  </div>
+                  <div class="calendar-sidebar-header">
+                    <i data-feather="search"></i>
+                    <div class="search-form">
+                      <input type="search" class="form-control" placeholder="Search calendar">
+                    </div>
+                    <a href="#" class="btn btn-sm btn-primary btn-icon calendar-add">
+                      <div data-toggle="tooltip"><i data-feather="plus"></i></div>
+                    </a><!-- calendar-add -->
+                    <div class="dropdown">
+                      <button style="margin-left: 1px;" class="btn btn-sm btn-primary btn-icon dropdown-toggle"
+                        type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <nav class="calendar-nav">
+                          <a href="#" class="calendar show"><span></span> Training Events</a>
+                          <a href="#" class="birthday show"><span></span> Health Events</a>
+                          <a href="#" class="holiday show"><span></span> Competition Events</a>
+                          <a href="#" class="discover show"><span></span> Weekly Events</a>
+                          <a href="#" class="meetup show"><span></span> Meetup Events</a>
+                          <a href="#" class="other show"><span></span> Other Events</a>
+                        </nav>
+                      </div>
+                    </div>
+                  </div><!-- calendar-sidebar-header -->
+                  <div id="calendarSidebarBody" class="calendar-sidebar-body">
+                    <div class="calendar-inline">
+                      <div id="calendarInline"></div>
+                    </div><!-- calendar-inline -->
+
+                    <div class="d-flex align-items-center justify-content-between mg-b-20">
+                      <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Upcoming Events</h6>
+                    </div>
+                    <div class="pd-20 mg-b-20">
+                      <div class="schedule-group">
+                        <a href="#" class="schedule-item bd-l bd-2 bd-danger">
+                          <h6>EU Competition 2019</h6>
+                          <span>8:00am - 9:00am, Berlin</span>
+                        </a><!-- schedule-item -->
+                        <a href="#" class="schedule-item bd-l bd-2 bd-success">
+                          <h6>Start Training course</h6>
+                          <span>9:30am - 11:30am, Sundsvall</span>
+                        </a><!-- schedule-item -->
+                        <a href="#" class="schedule-item bd-l bd-2 bd-primary">
+                          <h6>Viterenary visit</h6>
+                          <span>2:30pm - 3:00pm, Umeå</span>
+                        </a><!-- schedule-item -->
+                      </div><!-- schedule-group -->
+                    </div>
+                  </div><!-- calendar-sidebar-body -->
+                </div><!-- calendar-sidebar -->
+              </div><!-- calendar-wrapper -->
+            </div><!-- col -->
+
             <div class="col-sm-6 col-md-5 col-lg mg-t-40">
               <div class="d-flex align-items-center justify-content-between mg-b-15">
                 <h6 class="tx-13 tx-uppercase tx-semibold mg-b-0">Photos</h6>
@@ -554,13 +614,12 @@
                 </div><!-- col -->
               </div><!-- row -->
             </div><!-- col -->
+
           </div><!-- row -->
         </div><!-- profile-sidebar -->
       </div><!-- media -->
     </div><!-- container -->
   </div><!-- end site content -->
-
-
 
   <footer class="footer">
     <div>
@@ -577,10 +636,12 @@
   </footer>
 
   <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery-ui.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/feather.min.js"></script>
   <script src="assets/js/perfect-scrollbar.min.js"></script>
+  <script src="assets/js/feather.min.js"></script>
   <script src="assets/js/style.js"></script>
+  <script src="assets/js/calendar.js"></script>
 </body>
 
 </html>

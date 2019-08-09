@@ -21,8 +21,6 @@
   <link rel="stylesheet" href="assets/css/calendar.css">
   <link rel="stylesheet" href="assets/css/ionicons/ionicons.min.css">
 
-
-
 </head>
 
 <body class="page-profile ">
@@ -49,10 +47,7 @@
               <a href="index.html" class="nav-sub-link"><i data-feather="grid"></i>My horses</a>
             </li>
             <li class="nav-sub-item">
-              <a href="trjournal.html" class="nav-sub-link"><i data-feather="book-open"></i>Trainings Journal</a>
-            </li>
-            <li class="nav-sub-item">
-              <a href="#" class="nav-sub-link"><i data-feather="calendar"></i>Calendar</a>
+              <a href="calendar.html" class="nav-sub-link"><i data-feather="calendar"></i>Calendar</a>
             </li>
             <li class="nav-sub-item">
               <a href="#" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Statistics</a>
@@ -217,7 +212,7 @@
             class="profile-update-option bg-white ht-50 bd bd-3 d-flex justify-content-end mg-b-20 mg-lg-b-25 rounded">
             <div class="d-flex align-items-center pd-x-20 mg-r-auto">
               <i data-feather="edit-3"></i> <a href="#" class="link-03 mg-l-10"><span class="d-none d-sm-inline">Write
-                  an</span> article</a>
+                  new</span> post</a>
             </div>
             <div class="wd-50 bd-l d-flex align-items-center justify-content-center">
               <a href="#" class="link-03" data-toggle="tooltip" title="Publish Photo"><i data-feather="image"></i></a>
@@ -231,90 +226,325 @@
             </div>
           </div>
 
-          <div class="card mg-b-20 mg-lg-b-25">
-            <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
-              <h6 class="tx-uppercase tx-semibold mg-b-0">Latest Activity</h6>
-              <nav class="nav nav-icon-only">
-                <a href="#" class="nav-link"><i data-feather="more-horizontal"></i></a>
+          <div class="journal-content">
+            <div class="journal-content-header">
+              <nav class="nav">
+                <a href="#journalInformation" class="nav-link active" data-toggle="tab">Latest events</a>
+                <a href="#trainingjournal" class="nav-link" data-toggle="tab">Training journal</a>
+                <a href="#healthjournal" class="nav-link" data-toggle="tab">Health journal</a>
+                <a href="#competitionjournal" class="nav-link" data-toggle="tab">Competition journal</a>
+                <a href="#nutritionjournal" class="nav-link" data-toggle="tab">Nutrition journal</a>
+                <a href="#foodjournal" class="nav-link" data-toggle="tab">Food journal</a>
+                <a href="#observationjournal" class="nav-link" data-toggle="tab">Observation journal</a>
+                <a href="#contactsjournal" class="nav-link" data-toggle="tab">Contacts</a>
               </nav>
-            </div><!-- card-header -->
-            <div class="card-body pd-20 pd-lg-25">
-              <div class="media align-items-center mg-b-20">
-                <div class="avatar avatar-online"><img src="assets/img/img2.jpg" class="rounded-circle" alt="">
+            </div><!-- journals-content-header -->
+
+            <div class="journal-content-body ps">
+              <div class="tab-content">
+
+                <div id="journalInformation" class="tab-pane show pd-20 pd-xl-25 active">
+
+                  <div class="card mg-b-20 mg-lg-b-25">
+                    <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
+                      <h6 class="tx-uppercase tx-semibold mg-b-0">Visit horse care veterinary</h6>
+                      <nav class="nav nav-icon-only">
+                        <a href="#" class="nav-link"><i data-feather="more-horizontal"></i></a>
+                      </nav>
+                    </div><!-- card-header -->
+                    <div class="card-body pd-20 pd-lg-25">
+                      <div class="media align-items-center mg-b-20">
+                        <div class="avatar avatar-online"><img src="assets/img/img2.jpg" class="rounded-circle" alt="">
+                        </div>
+                        <div class="media-body pd-l-15">
+                          <h6 class="mg-b-3">Fedro paolo</h6>
+                          <span class="d-block tx-13 tx-color-03">Visit veterinary...</span>
+                        </div>
+                        <span class="d-none d-sm-block tx-12 tx-color-03 align-self-start">5 hours ago</span>
+                      </div><!-- media -->
+                      <p class="mg-b-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit . <a href="#">#Fedropaolo</a> <a href="#">#Bonny</a>
+                      </p>
+                      <div class="bd bd-2 bg-gray-50 pd-y-15 pd-x-15 pd-sm-x-20">
+                        <h6 class="tx-15 mg-b-3">in voluptate velit esse cillum dol</h6>
+                        <p class="mg-b-0 tx-14">eserunt mollit anim id est laborum</p>
+                        <span class="tx-13 tx-color-03">Sundsvall, Västernorrland, SE</span>
+                      </div>
+                    </div>
+                  </div><!-- card -->
+
+                  <div class="card mg-b-20 mg-lg-b-25">
+                    <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
+                      <h6 class="tx-uppercase tx-semibold mg-b-0">Miniature Horse Challenge</h6>
+                      <nav class="nav nav-icon-only">
+                        <a href="#" class="nav-link"><i data-feather="more-horizontal"></i></a>
+                      </nav>
+                    </div><!-- card-header -->
+                    <div class="card-body pd-20 pd-lg-25">
+                      <div class="media align-items-center mg-b-20">
+                        <div class="avatar avatar-online"><img src="assets/img/img2.jpg" class="rounded-circle" alt="">
+                        </div>
+                        <div class="media-body pd-l-15">
+                          <h6 class="mg-b-3">Fedro paolo</h6>
+                          <span class="d-block tx-13 tx-color-03">New competition...</span>
+                        </div>
+                        <span class="d-none d-sm-block tx-12 tx-color-03 align-self-start">15 hours ago</span>
+                      </div><!-- media -->
+                      <p class="mg-b-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit . <a href="#">#Fedropaolo</a> <a href="#">#Bonny</a>
+                      </p>
+                      <div class="bd bd-2 bg-gray-50 pd-y-15 pd-x-15 pd-sm-x-20">
+                        <h6 class="tx-15 mg-b-3">in voluptate velit esse cillum dol</h6>
+                        <p class="mg-b-0 tx-14">eserunt mollit anim id est laborum</p>
+                        <span class="tx-13 tx-color-03">Sundsvall, Västernorrland, SE</span>
+                      </div>
+                    </div>
+                  </div><!-- card -->
+
                 </div>
-                <div class="media-body pd-l-15">
-                  <h6 class="mg-b-3">Fedro paolo</h6>
-                  <span class="d-block tx-13 tx-color-03">Visit veterinary...</span>
-                </div>
-                <span class="d-none d-sm-block tx-12 tx-color-03 align-self-start">5 hours ago</span>
-              </div><!-- media -->
-              <p class="mg-b-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit . <a href="#">#Fedropaolo</a> <a href="#">#Bonny</a>
-              </p>
-              <div class="bd bd-2 bg-gray-50 pd-y-15 pd-x-15 pd-sm-x-20">
-                <h6 class="tx-15 mg-b-3">in voluptate velit esse cillum dol</h6>
-                <p class="mg-b-0 tx-14">eserunt mollit anim id est laborum</p>
-                <span class="tx-13 tx-color-03">Sundsvall, Västernorrland, SE</span>
-              </div>
-            </div>
-          </div><!-- card -->
-          <div class="card mg-b-20 mg-lg-b-25">
-            <div class="card-header pd-y-15 pd-x-20 d-flex align-items-center justify-content-between">
-              <h6 class="tx-uppercase tx-semibold mg-b-0">Miniature Horse Challenge</h6>
-              <nav class="nav nav-icon-only">
-                <a href="#" class="nav-link"><i data-feather="more-horizontal"></i></a>
-              </nav>
-            </div><!-- card-header -->
-            <div class="card-body pd-20 pd-lg-25">
-              <div class="media align-items-center mg-b-20">
-                <div class="avatar avatar-online"><img src="assets/img/img2.jpg" class="rounded-circle" alt="">
-                </div>
-                <div class="media-body pd-l-15">
-                  <h6 class="mg-b-3">Fedro paolo</h6>
-                  <span class="d-block tx-13 tx-color-03">New competition...</span>
-                </div>
-                <span class="d-none d-sm-block tx-12 tx-color-03 align-self-start">15 hours ago</span>
-              </div><!-- media -->
-              <p class="mg-b-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit . <a href="#">#Fedropaolo</a> <a href="#">#Bonny</a>
-              </p>
-              <div class="bd bd-2 bg-gray-50 pd-y-15 pd-x-15 pd-sm-x-20">
-                <h6 class="tx-15 mg-b-3">in voluptate velit esse cillum dol</h6>
-                <p class="mg-b-0 tx-14">eserunt mollit anim id est laborum</p>
-                <span class="tx-13 tx-color-03">Sundsvall, Västernorrland, SE</span>
-              </div>
-            </div>
-          </div><!-- card -->
+                <div id="trainingjournal" class="tab-pane pd-20 pd-xl-25">
+
+                  <div class="media-body">
+                    <div class="timeline-group tx-13">
+                      <div class="timeline-label">JULY 15, 2019</div>
+                      <div class="timeline-item">
+                        <div class="timeline-time">10:30am - 11:30pm</div>
+                        <div class="timeline-body">
+                          <h6 class="mg-b-0">Rider: Anna Persson</h6>
+                          <p><a style="color: rgb(3, 82, 29);">Where: forest,</a> <a style="color: brown">Ground:
+                              varied</a>
+                          </p>
+
+                          <p><a href="journal-item.html">In this lesson, you different types of jumping and spring with
+                              your
+                              horse. In the next
+                              lesson, your training will be more advanced and with more details.</a></p>
+                          <nav class="nav nav-row mg-t-15">
+                            <p><a style="color: rgb(3, 82, 29);">Time: 60 min</a></p><a class="nav-link">, Sundsvall
+                              ridklubb,
+                              Sweden
+                              SE</a>
+                          </nav>
+                        </div><!-- timeline-body -->
+                      </div><!-- timeline-item -->
+                      <div class="timeline-item">
+                        <div class="timeline-time">08:15pm - 09:00pm</div>
+                        <div class="timeline-body">
+                          <h6 class="mg-b-0">Rider: Sandra Larsson</h6>
+                          <p><a style="color: rgb(3, 82, 29);">Where: stable,</a> <a style="color: brown">Ground:
+                              varied</a></p>
+
+                          <p><a href="journal-item.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                              Aenean
+                              commodo ligula eget
+                              dolor. Aenean
+                              massa. Cum sociis natoque penatibus et magnis dis parturient montes.</a></p>
+
+                          <a href="#" class="d-block wd-lg-50p"><img src="assets/img/img6.jpg" class="img-fluid"
+                              alt=""></a>
+                          <nav class="nav nav-row mg-t-15">
+                            <p><a style="color: rgb(3, 82, 29);">Time: 45 min</a></p><a class="nav-link">, Timrå
+                              ridklubb,
+                              Sweden
+                              SE</a>
+                          </nav>
+                        </div><!-- timeline-body -->
+                      </div><!-- timeline-item -->
+                      <div class="timeline-item">
+                        <div class="timeline-time">03:30pm</div>
+                        <div class="timeline-body">
+                          <h6 class="mg-b-0">Rider: Emma Nordin</h6>
+                          <p><a style="color: rgb(3, 82, 29);">Where: forest, stable,</a> <a
+                              style="color: brown">Ground:
+                              varied</a></p>
+
+                          <p><a href="journal-item.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                              Aenean
+                              commodo ligula eget
+                              dolor. Aenean
+                              massa. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem ipsum dolor sit
+                              amet,
+                              consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                              massa. Cum sociis natoque penatibus et magnis dis parturient montes.</a></p>
+                          <nav class="nav nav-row mg-t-15">
+                            <p><a style="color: rgb(3, 82, 29);">Time: 120 min</a></p><a class="nav-link">, Umeå
+                              ridklubb,
+                              Sweden
+                              SE</a>
+                          </nav>
+                        </div><!-- timeline-body -->
+                      </div><!-- timeline-item -->
+                      <div class="timeline-label">JUNE 22, 2019</div>
+                      <div class="timeline-item">
+                        <div class="timeline-time">06:30pm - 09:30pm</div>
+                        <div class="timeline-body">
+                          <h6 class="mg-b-0">Rider: Alex Nordin</h6>
+                          <p><a style="color: rgb(3, 82, 29);">Where: stable,</a> <a style="color: brown">Ground:
+                              varied</a></p>
+
+                          <p><a href="journal-item.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                              Aenean
+                              commodo ligula eget
+                              dolor. Aenean
+                              massa. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem ipsum dolor sit
+                              amet,
+                              consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</a></p>
+
+                          <div class="row row-xs">
+                            <div class="col"><img src="assets/img/img7.jpg" class="img-fluid" alt=""></div>
+                            <div class="col"><img src="assets/img/img8.jpg" class="img-fluid" alt=""></div>
+                          </div>
+
+                          <nav class="nav nav-row mg-t-15">
+                            <p><a style="color: rgb(3, 82, 29);">Time: 145 min</a></p><a class="nav-link">, Timrå
+                              ridklubb,
+                              Sweden
+                              SE</a>
+                          </nav>
+                        </div><!-- timeline-body -->
+                      </div><!-- timeline-item -->
+                      <div class="timeline-item">
+                        <div class="timeline-time">01:15pm</div>
+                        <div class="timeline-body">
+                          <h6 class="mg-b-0">Rider: Alex Nordin</h6>
+                          <p><a style="color: rgb(3, 82, 29);">Where: stable,</a> <a style="color: brown">Ground:
+                              varied</a></p>
+
+                          <p><a href="journal-item.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                              Aenean
+                              commodo ligula eget
+                              dolor. Aenean
+                              massa. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem ipsum dolor sit
+                              amet,
+                              consectetuer adipiscing elit.</a></p>
+                          <nav class="nav nav-row mg-t-15">
+                            <p><a style="color: rgb(3, 82, 29);">Time: 145 min</a></p><a class="nav-link">, Timrå
+                              ridklubb,
+                              Sweden
+                              SE</a>
+                          </nav>
+                        </div><!-- timeline-body -->
+                      </div><!-- timeline-item -->
+                      <div class="timeline-label">March 21, 2019</div>
+                      <div class="timeline-item">
+                        <div class="timeline-time">11:45am</div>
+                        <div class="timeline-body">
+                          <h6 class="mg-b-0">Rider: Alex Nordin</h6>
+                          <p><a style="color: rgb(3, 82, 29);">Where: stable,</a> <a style="color: brown">Ground:
+                              varied</a></p>
+
+                          <p><a href="journal-item.html">Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                              natoque
+                              penatibus et magnis
+                              dis
+                              parturient montes.</a></p>
+
+                          <p><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                              eget
+                              dolor. Aenean
+                              massa. Cum sociis natoque penatibus et magnis dis parturient montes.</a></p>
+                          <nav class="nav nav-row mg-t-15">
+                            <p><a style="color: rgb(3, 82, 29);">Time: 145 min</a></p><a class="nav-link">, Timrå
+                              ridklubb,
+                              Sweden
+                              SE</a>
+                          </nav>
+                        </div><!-- timeline-body -->
+                      </div><!-- timeline-item -->
+                    </div><!-- timeline-group -->
+                  </div><!-- media-body -->
+
+                </div><!-- tab-pane -->
+                <div id="healthjournal" class="tab-pane pd-20 pd-xl-25">
+
+
+
+
+
+
+
+
+
+
+                </div><!-- tab-pane -->
+                <div id="competitionjournal" class="tab-pane pd-20 pd-xl-25">
+
+
+
+
+
+
+
+
+
+
+                </div><!-- tab-pane -->
+                <div id="nutritionjournal" class="tab-pane pd-20 pd-xl-25">
+
+
+
+
+
+
+
+
+
+
+                </div><!-- tab-pane -->
+                <div id="foodjournal" class="tab-pane pd-20 pd-xl-25">
+
+
+
+
+
+
+
+
+
+
+                </div><!-- tab-pane -->
+                <div id="observationjournal" class="tab-pane pd-20 pd-xl-25">
+
+
+
+
+
+
+
+
+
+
+                </div><!-- tab-pane -->
+                <div id="contactsjournal" class="tab-pane pd-20 pd-xl-25">
+
+
+
+
+
+
+
+
+
+
+                </div><!-- tab-pane -->
+              </div><!-- tab-content -->
+            </div><!-- journal-content-body -->
+          </div>
         </div><!-- end horseProfile main body -->
 
         <!-- start horseProfile right sidebar -->
         <div class="profile-sidebar mg-t-40 mg-lg-t-0 pd-lg-l-25">
           <div class="row">
-            <div class="col-sm-5 col-md-5 col-lg mg-t-40 mg-sm-t-0 mg-lg-t-40">
-              <div class="d-flex align-items-center justify-content-between mg-b-20">
-                <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Training Journals</h6>
-              </div>
-              <ul class="list-unstyled media-list mg-b-15">
-                <li class="media align-items-center">
-                  <a href="#">
-                    <div class="avatar"><img src="assets/img/img3.jpg" class="rounded-circle" alt="">
-                    </div>
-                  </a>
-                  <div class="media-body pd-l-15">
-                    <p class="tx-medium mg-b-2"><a href="trjournal.html" class="link-01">Fedro's training journal</a>
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div><!-- col -->
-
             <div class="col-sm-5 col-md-5 col-lg mg-t-40 mg-sm-t- mg-lg-t-40">
               <div class="calendar-wrapper">
                 <div class="calendar-sidebar">
+                  <div class="d-flex align-items-center justify-content-between mg-b-20">
+                    <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Horse Calendar</h6>
+                  </div>
                   <div class="calendar-sidebar-header">
                     <i data-feather="search"></i>
                     <div class="search-form">
@@ -345,9 +575,10 @@
                       <div id="calendarInline"></div>
                     </div><!-- calendar-inline -->
 
+                    <div class="d-flex align-items-center justify-content-between mg-b-20">
+                      <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Upcoming Events</h6>
+                    </div>
                     <div class="pd-20 mg-b-20">
-                      <label class="tx-uppercase tx-sans tx-10 tx-medium tx-spacing-1 tx-color-03 mg-b-15">Upcoming
-                        Events</label>
                       <div class="schedule-group">
                         <a href="#" class="schedule-item bd-l bd-2 bd-danger">
                           <h6>EU Competition 2019</h6>

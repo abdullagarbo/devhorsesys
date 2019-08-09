@@ -15,12 +15,10 @@
   <!-- vendor css -->
   <link href="assets/css/fontawesome/all.min.css" rel="stylesheet" />
 
-  <!-- DashForge CSS -->
   <!-- Main CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/profile.css">
   <link rel="stylesheet" href="assets/css/ionicons/ionicons.min.css">
-  <link rel="stylesheet" href="assets/css/journals.css">
+  <link rel="stylesheet" href="assets/css/j-item.css">
 
 </head>
 
@@ -48,10 +46,7 @@
               <a href="index.html" class="nav-sub-link"><i data-feather="grid"></i>My horses</a>
             </li>
             <li class="nav-sub-item">
-              <a href="trjournal.html" class="nav-sub-link"><i data-feather="book-open"></i>Training Journal</a>
-            </li>
-            <li class="nav-sub-item">
-              <a href="#" class="nav-sub-link"><i data-feather="calendar"></i>Calendar</a>
+              <a href="calendar.html" class="nav-sub-link"><i data-feather="calendar"></i>Calendar</a>
             </li>
             <li class="nav-sub-item">
               <a href="#" class="nav-sub-link"><i data-feather="bar-chart-2"></i>Statistics</a>
@@ -305,8 +300,80 @@
             </div><!-- row -->
             <div class="col-sm-6 mg-t-20 mg-sm-t-30">
               <div data-label="Preview" class="df-example">
-                <img src="assets/img/img7.jpg" class="img-thumbnail wd-100p wd-sm-200" alt="Responsive image">
-                <img src="assets/img/img8.jpg" class="img-thumbnail wd-100p wd-sm-200" alt="Responsive image">
+                <div class="row row-sm">
+                  <div class="col-md">
+                    <img src="assets/img/img7.jpg" class="img-thumbnail" alt="Responsive image">
+                    <figcaption class="pos-absolute b-0 l-0 wd-100p pd-20 d-flex justify-content-center">
+                      <div class="btn-group">
+                        <a href="#" class="btn btn-dark btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-download">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                          </svg></a>
+                        <a href="#" class="btn btn-dark btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+                            <polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
+                          </svg></a>
+                        <a href="#" class="btn btn-dark btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize-2">
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <polyline points="9 21 3 21 3 15"></polyline>
+                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                          </svg></a>
+                        <a href="#" class="btn btn-dark btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                            </path>
+                            <line x1="10" y1="11" x2="10" y2="17"></line>
+                            <line x1="14" y1="11" x2="14" y2="17"></line>
+                          </svg></a>
+                      </div>
+                    </figcaption>
+                  </div><!-- col -->
+                  <div class="col-md mg-t-10 mg-md-t-0">
+                    <img src="assets/img/img8.jpg" class="img-thumbnail" alt="Responsive image">
+                    <figcaption class="pos-absolute b-0 l-0 wd-100p pd-20 d-flex justify-content-center">
+                      <div class="btn-group">
+                        <a href="" class="btn btn-dark btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-download">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                          </svg></a>
+                        <a href="" class="btn btn-dark btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2">
+                            <polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
+                          </svg></a>
+                        <a href="" class="btn btn-dark btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize-2">
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <polyline points="9 21 3 21 3 15"></polyline>
+                            <line x1="21" y1="3" x2="14" y2="10"></line>
+                            <line x1="3" y1="21" x2="10" y2="14"></line>
+                          </svg></a>
+                        <a href="" class="btn btn-dark btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                            </path>
+                            <line x1="10" y1="11" x2="10" y2="17"></line>
+                            <line x1="14" y1="11" x2="14" y2="17"></line>
+                          </svg></a>
+                      </div>
+                    </figcaption>
+                  </div><!-- col -->
+                </div>
               </div>
             </div>
           </div>
@@ -406,7 +473,7 @@
                 <a href="#" class="dropdown-item">New ToDo item</a>
               </div><!-- dropdown-menu -->
             </div>
-            <button type="button" class="btn btn-primary mg-sm-l-5"><i data-feather="upload"></i> Upload photo</button>
+            <button type="button" class="btn btn-primary mg-sm-l-5"><i data-feather="upload"></i> Upload file</button>
             <button type="button" class="btn btn-primary mg-sm-l-5">Save Post</button>
             <button type="button" class="btn btn-secondary mg-sm-l-5" data-dismiss="modal">Discard</button>
           </div>
@@ -511,6 +578,7 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/feather.min.js"></script>
   <script src="assets/js/style.js"></script>
+  <script src="assets/js/j-item.js"></script>
 </body>
 
 </html>
