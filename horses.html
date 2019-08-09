@@ -136,7 +136,7 @@
         <div>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-style1 mg-b-10">
-              <li class="breadcrumb-item"><a href="#">DevHorse</a></li>
+              <li class="breadcrumb-item"><a href="index.html">DevHorse</a></li>
               <li class="breadcrumb-item active" aria-current="page">Horse profile</li>
             </ol>
           </nav>
@@ -193,16 +193,6 @@
                 <li class="list-inline-item"><a href="#">Quick stop</a></li>
               </ul>
             </div><!-- col -->
-            <div class="col-sm-6 col-md-5 col-lg mg-t-40">
-              <label class="tx-sans tx-10 tx-semibold tx-uppercase tx-color-01 tx-spacing-1 mg-b-15">Social
-                Channels</label>
-              <ul class="list-unstyled profile-info-list">
-                <li><i data-feather="github"></i> <a href="#">@fedroPaolofedro</a></li>
-                <li><i data-feather="twitter"></i> <a href="#">@fedroPaolo</a></li>
-                <li><i data-feather="instagram"></i> <a href="#">@fedroPaolo</a></li>
-                <li><i data-feather="facebook"></i> <a href="#">@fedroPaolo</a></li>
-              </ul>
-            </div><!-- col -->
           </div><!-- row -->
         </div><!-- end horseProfile left sidebar -->
 
@@ -238,6 +228,28 @@
                 <a href="#observationjournal" class="nav-link" data-toggle="tab">Observation journal</a>
                 <a href="#contactsjournal" class="nav-link" data-toggle="tab">Contacts</a>
               </nav>
+              <div style="margin-left: 520px;" class="dropdown">
+                <button style="margin-left: 1px;" class="btn btn-sm btn-primary btn-icon dropdown-toggle" type="button"
+                  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-plus">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                  </svg>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start"
+                  style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(1px, 34px, 0px);">
+                  <nav class="calendar-nav">
+                    <a href="#" class="calendar show">Training journal</a>
+                    <a href="#" class="calendar show">Health journal</a>
+                    <a href="#" class="calendar show">Competition journal</a>
+                    <a href="#" class="calendar show">Nutrition journal</a>
+                    <a href="#" class="calendar show">Food journal</a>
+                    <a href="#" class="calendar show">Observation journal</a>
+                  </nav>
+                </div>
+              </div>
             </div><!-- journals-content-header -->
 
             <div class="journal-content-body ps">
@@ -594,7 +606,60 @@
                         </a><!-- schedule-item -->
                       </div><!-- schedule-group -->
                     </div>
+                    <div class="d-flex align-items-center justify-content-between mg-b-20">
+                      <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Vital parameters</h6>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-primary table-hover table-striped mg-b-0">
+                        <thead>
+                          <tr>
+                            <th scope="col">Date /Time</th>
+                            <th scope="col">10.30 01.01.19</th>
+                            <th scope="col">12.15 12.07.19</th>
+                            <th scope="col">13.45 29.07.19</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Pulse</th>
+                            <td>32</td>
+                            <td>35</td>
+                            <td>33</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Temp.</th>
+                            <td>37.5</td>
+                            <td>38</td>
+                            <td>37</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">RS. rate</th>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>6</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Weight</th>
+                            <td>632</td>
+                            <td>629</td>
+                            <td>630</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <a style="float: right; margin-left: 1px;" href="#modalNewParameter" data-toggle="modal"
+                      class="btn btn-sm btn-primary btn-icon calendar-add">
+                      <div data-toggle="tooltip"><i data-feather="plus"></i></div>
+                    </a>
+                    <a style="float: right;" href="#browesParameters" data-toggle="modal"
+                      class="btn btn-sm btn-primary btn-icon calendar-add">
+                      <div data-toggle="tooltip"><i data-feather="external-link"></i></div>
+                    </a>
+
+
                   </div><!-- calendar-sidebar-body -->
+
                 </div><!-- calendar-sidebar -->
               </div><!-- calendar-wrapper -->
             </div><!-- col -->
@@ -604,6 +669,325 @@
       </div><!-- media -->
     </div><!-- container -->
   </div><!-- end horseProfile content -->
+
+
+  <div class="modal fade effect-scale" id="modalNewParameter" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body pd-20 pd-sm-30">
+          <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <h5 class="tx-18 tx-sm-20 mg-b-20">Add new vital parameter</h5>
+          <p class="tx-13 tx-color-03 mg-b-30">You can add information you see here, such as pulse, temp and weight
+          </p>
+
+          <div class="d-sm-flex">
+            <div class="mg-sm-r-30">
+              <div class="pos-relative d-inline-block mg-b-20">
+                <div class="col-sm-3 col-md-2 col-lg">
+                  <div class="avatar avatar-xxl"><img src="assets/img/img2.jpg" class="rounded-circle" alt="">
+                  </div>
+                </div><!-- col -->
+              </div><br>
+            </div><!-- col -->
+            <div class="flex-fill">
+              <div class="form-group mg-b-10">
+                <input type="text" class="form-control" placeholder="Temp" value="">
+              </div><!-- form-group -->
+              <div class="form-group mg-b-10">
+                <input type="text" class="form-control" placeholder="Pulse" value="">
+              </div><!-- form-group -->
+              <div class="form-group mg-b-10">
+                <input type="text" class="form-control" placeholder="Rs. rate" value="">
+              </div><!-- form-group -->
+              <div class="form-group mg-b-10">
+                <input type="email" class="form-control" placeholder="Time" value="">
+              </div><!-- form-group -->
+              <div class="form-group mg-b-10">
+                <input type="text" class="form-control" placeholder="Weight" value="">
+              </div><!-- form-group -->
+
+              <div class="form-group mg-b-10">
+                <input type="text" class="form-control" placeholder="Date" value="">
+              </div><!-- form-group -->
+              <div class="form-group mg-b-10">
+                <input type="email" class="form-control" placeholder="Time" value="">
+              </div><!-- form-group -->
+              <h6 class="mg-t-20 mg-b-10">Notes</h6>
+              <textarea class="form-control" rows="2" placeholder="Add notes"></textarea>
+            </div><!-- col -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
+
+            <button type="button" class="btn btn-primary mg-sm-l-5">Save</button>
+            <button type="button" class="btn btn-secondary mg-sm-l-5" data-dismiss="modal">Discard</button>
+          </div>
+        </div><!-- modal-footer -->
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
+
+
+  <div class="modal fade effect-scale" id="browesParameters" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body pd-20 pd-sm-30">
+          <button type="button" class="close pos-absolute t-15 r-20" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <h5 class="tx-18 tx-sm-20 mg-b-20">Add new vital parameter</h5>
+          <p class="tx-13 tx-color-03 mg-b-30">You can add information you see here, such as pulse, temp and weight
+          </p>
+
+          <div class="d-sm-flex">
+            <div class="journal-content">
+              <div class="journal-content-header">
+                <nav class="nav">
+                  <a href="#temp" class="nav-link active" data-toggle="tab">Temprature</a>
+                  <a href="#pulse" class="nav-link" data-toggle="tab">Pulse</a>
+                  <a href="#rsrate" class="nav-link" data-toggle="tab">Rs. rate</a>
+                  <a href="#weight" class="nav-link" data-toggle="tab">Weight</a>
+                </nav>
+              </div><!-- journals-content-header -->
+
+              <div class="journal-content-body ps">
+                <div class="tab-content">
+                  <div id="temp" class="tab-pane show pd-20 pd-xl-25 active">
+
+                    <div class="table-responsive">
+                      <table class="table table-primary table-hover table-striped mg-b-0">
+                        <thead>
+                          <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Value1</th>
+                            <th scope="col">Value2</th>
+                            <th style="width: 200px; text-align: center;" scope="col">Notes</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">01.08.19</th>
+                            <td>38</td>
+                            <td>37.5</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.07.19</th>
+                            <td>37.5</td>
+                            <td>38</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.06.19</th>
+                            <td>38</td>
+                            <td>38</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.05.19</th>
+                            <td>37.2</td>
+                            <td>37</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.04.19</th>
+                            <td>37.2</td>
+                            <td>37</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.03.19</th>
+                            <td>37.2</td>
+                            <td>37</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div>
+                  <div id="pulse" class="tab-pane pd-20 pd-xl-25">
+
+                    <div class="table-responsive">
+                      <table class="table table-secondary table-hover table-striped mg-b-0">
+                        <thead>
+                          <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Value1</th>
+                            <th scope="col">Value2</th>
+                            <th style="width: 200px; text-align: center;" scope="col">Notes</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">01.08.19</th>
+                            <td>32</td>
+                            <td>35</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.07.19</th>
+                            <td>33</td>
+                            <td>36</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.06.19</th>
+                            <td>32</td>
+                            <td>34</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.05.19</th>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.04.19</th>
+                            <td>33</td>
+                            <td>34</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.03.19</th>
+                            <td>32</td>
+                            <td>34</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div><!-- tab-pane -->
+                  <div id="rsrate" class="tab-pane pd-20 pd-xl-25">
+
+                    <div class="table-responsive">
+                      <table class="table table-primary table-hover table-striped mg-b-0">
+                        <thead>
+                          <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Value1</th>
+                            <th scope="col">Value2</th>
+                            <th style="width: 200px; text-align: center;" scope="col">Notes</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">01.08.19</th>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.07.19</th>
+                            <td>7</td>
+                            <td>6</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.06.19</th>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.05.19</th>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.04.19</th>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.03.19</th>
+                            <td>7</td>
+                            <td>6</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div><!-- tab-pane -->
+                  <div id="weight" class="tab-pane pd-20 pd-xl-25">
+
+                    <div class="table-responsive">
+                      <table class="table table-secondary table-hover table-striped mg-b-0">
+                        <thead>
+                          <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Value1</th>
+                            <th scope="col">Value2</th>
+                            <th style="width: 200px; text-align: center;" scope="col">Notes</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">01.08.19</th>
+                            <td>625</td>
+                            <td>624</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.07.19</th>
+                            <td>627</td>
+                            <td>626</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.06.19</th>
+                            <td>630</td>
+                            <td>629</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.05.19</th>
+                            <td>628</td>
+                            <td>629</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.04.19</th>
+                            <td>627</td>
+                            <td>627</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">01.03.19</th>
+                            <td>626</td>
+                            <td>627</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                  </div><!-- tab-pane -->
+                </div><!-- tab-content -->
+              </div><!-- journal-content-body -->
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="wd-100p d-flex flex-column flex-sm-row justify-content-end">
+
+            <button type="button" class="btn btn-primary mg-sm-l-5">Save</button>
+            <button type="button" class="btn btn-secondary mg-sm-l-5" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- modal-footer -->
+      </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+  </div><!-- modal -->
 
 
   <!-- start site footer-->
