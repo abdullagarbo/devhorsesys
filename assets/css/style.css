@@ -42,10 +42,11 @@
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
+/*
 *,
 *::before,
 *::after {
-  box-sizing: border-box; }
+  box-sizing: border-box; }*/
 
 html {
   font-family: sans-serif;
@@ -622,9 +623,8 @@ pre {
   .col-sm-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
-  .col-sm-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+  .col-sm-5 {    
+    max-width: 100%; }
   .col-sm-6 {
     flex: 0 0 50%;
     max-width: 50%; }
@@ -722,9 +722,8 @@ pre {
   .col-md-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
-  .col-md-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%; }
+  .col-md-5 {    
+    max-width: auto; }
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%; }
@@ -4979,7 +4978,8 @@ button.bg-dark:focus {
   flex-shrink: 1 !important; }
 
 .justify-content-start {
-  justify-content: flex-start !important; }
+  justify-content: flex-start !important;
+  margin-left: 10px }
 
 .justify-content-end {
   justify-content: flex-end !important; }
@@ -16215,7 +16215,9 @@ a.bg-twitter:hover, a.bg-twitter:focus, button.bg-twitter:hover, button.bg-twitt
   margin-right: 0px; }
 
 .mg-b-0 {
-  margin-bottom: 0px; }
+  margin-bottom: 0px; 
+  margin-top: 10px;
+  margin-left: 10px;}
 
 .mg-l-0 {
   margin-left: 0px; }
