@@ -1,8 +1,7 @@
 /* ############### FONTS IMPORT ############### */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Rubik:300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:700");
 
 
 /* ############### BOOTSTRAP FRAMEWORK ############### */
@@ -95,11 +94,11 @@ dd {
   margin-left: 0; }
 
 a {
-  color: #0168fa;
+  color: rgba(93,117,101,0.8);
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #0148ae;
+    color:rgba(176,112,41,1);
     text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
@@ -632,8 +631,7 @@ pre {
     flex: 0 0 58.33333%;
     max-width: 58.33333%; }
   .col-sm-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    max-width: 100%; }
   .col-sm-9 {
     flex: 0 0 75%;
     max-width: 75%; }
@@ -728,8 +726,7 @@ pre {
     flex: 0 0 50%;
     max-width: 50%; }
   .col-md-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%; }
+    max-width: 100%; }
   .col-md-8 {
     flex: 0 0 66.66667%;
     max-width: 66.66667%; }
@@ -902,7 +899,7 @@ pre {
 
 @media (min-width: 1200px) {
   .col-xl {
-    flex-basis: 0;
+    
     flex-grow: 1;
     max-width: 100%; }
   .col-xl-auto {
@@ -1667,26 +1664,26 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #0168fa;
-  border-color: #0168fa; }
+  background-color: rgba(93,117,101,0.8);
+  border-color: rgba(93,117,101,0.8); }
   .btn-primary:hover {
     color: #fff;
-    background-color: #0158d4;
-    border-color: #0153c7; }
+    background-color: rgba(93,117,101,0.8);
+    border-color: rgba(93,117,101,0.8); }
   .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(39, 127, 251, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(93,117,101,0.8); }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #0168fa;
-    border-color: #0168fa; }
+    background-color: rgba(93,117,101,0.8);
+    border-color: rgba(93,117,101,0.8);}
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0153c7;
-    border-color: #014ebb; }
+    background-color: #rgba(93,117,101,0.8);;
+    border-color: #rgba(93,117,101,0.8);; }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(39, 127, 251, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(93,117,101,0.8); }
 
 .btn-secondary, .ui-datepicker-buttonpane button {
   color: #fff;
@@ -3249,7 +3246,7 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1.5px solid rgba(11, 61, 179, 0.16);
+  border: 0.5px solid rgba(11, 61, 179, 0.16);
   border-radius: 0.25rem; }
   .card > hr {
     margin-right: 0;
@@ -3425,7 +3422,7 @@ input[type="button"].btn-block {
   .breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
     padding-right: 0.5rem;
-    color: #7987a1;
+    color: rgba(176,112,41,1);;
     content: "/"; }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
@@ -3435,9 +3432,10 @@ input[type="button"].btn-block {
   text-decoration: none; }
 
 .breadcrumb-item.active {
-  color: #7987a1; }
+  color: rgba(176,112,41,1); }
 
 .pagination {
+  height: 15px;
   display: flex;
   padding-left: 0;
   list-style: none;
@@ -3449,19 +3447,19 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #0168fa;
+  color: rgba(93,117,101,0.8);
   background-color: #fff;
   border: 1px solid #cdd4e0; }
   .page-link:hover {
     z-index: 2;
-    color: #0148ae;
+    color: rgba(93,117,101,0.8);
     text-decoration: none;
     background-color: #e3e7ed;
     border-color: #cdd4e0; }
   .page-link:focus {
     z-index: 2;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(1, 104, 250, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(93,117,101,0.8); }
 
 .page-item:first-child .page-link {
   margin-left: 0;
@@ -3475,8 +3473,8 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #0168fa;
-  border-color: #0168fa; }
+  background-color: rgba(93,117,101,0.8);
+  border-color: rgba(93,117,101,0.8); }
 
 .page-item.disabled .page-link {
   color: #7987a1;
@@ -7202,11 +7200,11 @@ strong {
       .breadcrumb-style2 .breadcrumb-item a:focus,
       .breadcrumb-style3 .breadcrumb-item a:hover,
       .breadcrumb-style3 .breadcrumb-item a:focus {
-        color: #0168fa; }
+        color: rgba(176,112,41,1); }
     .breadcrumb-style1 .breadcrumb-item.active,
     .breadcrumb-style2 .breadcrumb-item.active,
     .breadcrumb-style3 .breadcrumb-item.active {
-      color: #0168fa; }
+      color: rgba(93,117,101,0.8); }
     .breadcrumb-style1 .breadcrumb-item + .breadcrumb-item::before,
     .breadcrumb-style2 .breadcrumb-item + .breadcrumb-item::before,
     .breadcrumb-style3 .breadcrumb-item + .breadcrumb-item::before {
@@ -7620,9 +7618,9 @@ textarea.form-control {
 .nav-link {
   color: #596882; }
   .nav-link:hover, .nav-link:focus {
-    color: #0168fa; }
+    color: rgba(176,112,41,1); }
   .nav-link.active {
-    color: #0168fa; }
+    color: rgba(176,112,41,1); }
 
 .nav-pills .nav-link {
   transition: all 0.2s ease-in-out; }
@@ -7670,7 +7668,7 @@ textarea.form-control {
     color: #97a3b9; }
 
 .page-item.active .page-link {
-  background-color: #0168fa; }
+  background-color: rgba(93,117,101,0.8); }
 
 .page-link {
   min-width: 36px;
@@ -7679,7 +7677,7 @@ textarea.form-control {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0168fa;
+  color: rgba(93,117,101,0.8);
   transition: all 0.2s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
     .page-link {
@@ -8226,7 +8224,7 @@ textarea.form-control {
   border-top-width: 0; }
 
 .table-primary thead {
-  background-color: #0168fa; }
+  background-color: rgba(93,117,101,0.8); }
 
 .table-primary tbody tr {
   background-color: #f1f7ff; }

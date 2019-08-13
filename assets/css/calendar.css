@@ -41,6 +41,7 @@
       left: -281px; } }
   @media (min-width: 992px) {
     .calendar-sidebar {
+      width: 100%;
       left: 0;
       visibility: visible; } }
 
@@ -138,7 +139,7 @@
 
 .calendar-inline {
   padding: 20px 12px;
-  min-height: 273px; }
+  /*min-height: 273px;*/ }
   .calendar-inline .ui-datepicker-inline {
     max-width: none;
     border-width: 0;
