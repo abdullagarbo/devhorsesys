@@ -2916,6 +2916,11 @@ input[type="button"].btn-block {
     .custom-select {
       transition: none; } }
 
+.chkbox {
+
+  width: 105px !important;
+}
+
 .nav {
   display: flex;
   flex-wrap: wrap;
