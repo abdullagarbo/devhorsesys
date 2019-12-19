@@ -23,6 +23,11 @@
     .calendar-wrapper {
       top: 60px; } }
 
+#sideBarCalendar {
+
+  height: 500px !important;
+}
+
 .calendar-sidebar {
   background-color: #fff;  
   top: 0;
@@ -43,7 +48,8 @@
     .calendar-sidebar {
       width: 100%;
       left: 0;
-      visibility: visible; } }
+      visibility: visible;
+      height: 350px; } }
 
 .calendar-sidebar-header {  
   top: 0;

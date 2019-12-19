@@ -129,12 +129,12 @@
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <nav class="calendar-nav">
-                      <a href="#0" class="calendar show"><span></span> Training Events</a>
-                      <a href="#0" class="birthday show"><span></span> Health Events</a>
-                      <a href="#0" class="holiday show"><span></span> Competition Events</a>
-                      <a href="#0" class="discover show"><span></span> Weekly Events</a>
-                      <a href="#0" class="meetup show"><span></span> Meetup Events</a>
-                      <a href="#0" class="other show"><span></span> Other Events</a>
+                      <a href="#0" class="calendar show"><input type="checkbox" /><span></span> Training Events</a>
+                      <a href="#0" class="birthday show"><input type="checkbox" /><span></span> Health Events</a>
+                      <a href="#0" class="holiday show"><input type="checkbox" /><span></span> Competition Events</a>
+                      <a href="#0" class="discover show"><input type="checkbox" /><span></span> Weekly Events</a>
+                      <a href="#0" class="meetup show"><input type="checkbox" /><span></span> Meetup Events</a>
+                      <a href="#0" class="other show"><input type="checkbox" /><span></span> Other Events</a>
                     </nav>
                   </div>
                 </div>
@@ -466,29 +466,15 @@
                         <h6>Viterenary visit</h6>
                         <span>2:30pm - 3:00pm, Umeå</span>
                       </a><!-- schedule-item -->
+                      <a href="#0" class="schedule-item bd-l bd-2 bd-primary">
+                        <h6>Viterenary visit</h6>
+                        <span>2:30pm - 3:00pm, Umeå</span>
+                      </a><!-- schedule-item -->
+                      <a href="#0" class="schedule-item bd-l bd-2 bd-primary">
+                        <h6>Viterenary visit</h6>
+                        <span>2:30pm - 3:00pm, Umeå</span>
+                      </a><!-- schedule-item -->
                     </div><!-- schedule-group -->
-
-                    <br>
-
-                    <nav class="nav tx-10">
-                      <a href="#0" class="chkbox"><input type="checkbox" /><span
-                          style="margin-left: 3px; color: #0168fa;">Health</span></a>
-                      <a href="#0" class="chkbox"><input type="checkbox" /><span
-                          style="margin-left: 3px; color: #10b759;">Training</span></a>
-                      <a href="#0" class="chkbox"><input type="checkbox" /><span
-                          style="margin-left: 3px; color: #f10075;">Nutrition</span></a>
-                      <a href="#0" class="chkbox"><input type="checkbox" /><span
-                          style="margin-left: 3px; color: #00cccc;">Competition</span></a>
-                      <a href="#0" class="chkbox"><input type="checkbox" /><span
-                          style="margin-left: 3px; color: #5b47fb;">Breeding</span></a>
-                      <a href="#0" class="chkbox"><input type="checkbox" /><span
-                          style="margin-left: 3px; color: #fd7e14;">REHAB</span></a>
-                      <a href="#0" class="chkbox"><input type="checkbox" /><span
-                         style="margin-left: 3px; color: black;">My event</span></a>
-                      <a href="#0" class="chkbox"><input type="checkbox" /><span
-                          style="margin-left: 3px; color: brown;">Other</span></a>
-                    </nav>
-
                   </div>
                 </div><!-- calendar-sidebar -->
               </div><!-- calendar-wrapper -->
@@ -500,18 +486,39 @@
           <div class="row">
             <div class="col-sm-5 col-md-5 col-lg mg-t-45">
               <div class="calendar-wrapper">
-                <div class="calendar-sidebar">
+                <div id="sideBarCalendar" class="calendar-sidebar">
                   <div class="d-flex align-items-center justify-content-between">
-                    <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Edit horse/Group</h6>
+                    <h6 class="tx-13 tx-spacing-1 tx-uppercase tx-semibold mg-b-0">Horses / Groups</h6>
                   </div>
                   <div class="pd-20 mg-b-20">
-
+                    <h6 class="tx-13 tx-spacing-1">Move to : </h6>
                     <select class="form-control">
                       <option>All horses</option>
                       <option>Present horses</option>
                       <option>Sold horses</option>                      
                     </select>
 
+                    <h6 class="tx-13 tx-spacing-1" style="margin-top: 20px;">New group : </h6>
+                    <input type="text" class="form-control-text"/>
+                    <button class="btn btn-sm btn-primary btn-icon calendar-add" style="float: right; margin-top: 5px;"> Save</button>
+
+                    <h6 class="tx-13 tx-spacing-1" style="margin-top: 30px;">Edit group : </h6>
+                    <select class="form-control" style="margin-bottom: 10px;">
+                      <option>All horses</option>
+                      <option>Present horses</option>
+                      <option>Sold horses</option>                      
+                    </select>
+                    <input type="text" class="form-control-text"/>
+                    <button class="btn btn-sm btn-primary btn-icon calendar-add" style="float: right; margin-top: 5px;"> Save</button>
+
+                    <h6 class="tx-13 tx-spacing-1" style="margin-top: 40px;">Delete group : </h6>
+                    <select class="form-control">
+                      <option>All horses</option>
+                      <option>Present horses</option>
+                      <option>Sold horses</option>                      
+                    </select>
+                    <button class="btn btn-sm btn-primary btn-icon calendar-add" style="float: right; margin-top: 5px;"> Delete</button>
+                    
                   </div>
                 </div><!-- calendar-sidebar -->
               </div><!-- calendar-wrapper -->
