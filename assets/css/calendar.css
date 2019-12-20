@@ -21,7 +21,8 @@
   right: 0; }
   @media (min-width: 992px) {
     .calendar-wrapper {
-      top: 60px; } }
+      top: 60px;
+      margin-top: 10px; } }
 
 #sideBarCalendar {
 
